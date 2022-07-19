@@ -1,7 +1,8 @@
 {
   "name": "@dtnghia47/uikit-v2",
-  "version": "0.1.0",
+  "version": "0.1.6",
   "description": "dtnghia47 uikit",
+  "author": "dtnghia47@gmail.com",
   "type": "module",
   "source": "src/index.ts",
   "exports": {
@@ -12,7 +13,7 @@
   "main": "./dist/dtnghia47.cjs",
   "module": "./dist/dtnghia47.module.js",
   "unpkg": "./dist/dtnghia47.umd.js",
-  "types": "dist/dtnghia47.d.ts",
+  "types": "types/index.d.ts",
   "sideEffects": false,
   "dependencies": {
     "@types/node": "^16.7.13",
@@ -25,7 +26,7 @@
   },
   "scripts": {
     "build": "microbundle --generateTypes false --jsx React.createElement --compress false",
-    "buildx": "microbundle --generateTypes false --tsx React.createElement --compress false"
+    "publish": "npm publish --access public"
   },
   "eslintConfig": {
     "extends": [
@@ -48,5 +49,15 @@
   "devDependencies": {
     "microbundle": "^0.15.0",
     "react-app-rewired": "^2.2.1"
-  }
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md",
+    "dist",
+    "types"
+  ],
+  "contributors": [
+    "Nghĩa Đinh <dtnghia47@gmail.com> (https://github.com/dtnghia47)"
+  ]
 }
