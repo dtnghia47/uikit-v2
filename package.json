@@ -1,0 +1,52 @@
+{
+  "name": "@dtnghia47/uikit-v2",
+  "version": "0.1.0",
+  "description": "dtnghia47 uikit",
+  "type": "module",
+  "source": "src/index.ts",
+  "exports": {
+    "import": "./dist/dtnghia47.modern.js",
+    "require": "./dist/dtnghia47.cjs",
+    "default": "./dist/dtnghia47.modern.js"
+  },
+  "main": "./dist/dtnghia47.cjs",
+  "module": "./dist/dtnghia47.module.js",
+  "unpkg": "./dist/dtnghia47.umd.js",
+  "types": "dist/dtnghia47.d.ts",
+  "sideEffects": false,
+  "dependencies": {
+    "@types/node": "^16.7.13",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "typescript": "^4.4.2"
+  },
+  "scripts": {
+    "build": "microbundle --generateTypes false --jsx React.createElement --compress false",
+    "buildx": "microbundle --generateTypes false --tsx React.createElement --compress false"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "microbundle": "^0.15.0",
+    "react-app-rewired": "^2.2.1"
+  }
+}
