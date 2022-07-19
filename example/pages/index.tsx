@@ -18,7 +18,7 @@ const Home: NextPage = () => {
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
-        <Button title="check 1" />
+        <Button label="check 1" />
       </main>
 
       <footer className={styles.footer}>

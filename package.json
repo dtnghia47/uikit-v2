@@ -1,9 +1,8 @@
 {
   "name": "@dtnghia47/uikit-v2",
-  "version": "0.1.6",
+  "version": "0.1.8",
   "description": "dtnghia47 uikit",
   "author": "dtnghia47@gmail.com",
-  "type": "module",
   "source": "src/index.ts",
   "exports": {
     "import": "./dist/dtnghia47.modern.js",
@@ -26,12 +25,24 @@
   },
   "scripts": {
     "build": "microbundle --generateTypes false --jsx React.createElement --compress false",
-    "publish": "npm publish --access public"
+    "publish": "npm publish --access public",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
     ]
   },
   "browserslist": {
@@ -47,8 +58,21 @@
     ]
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^6.5.9",
+    "@storybook/addon-essentials": "^6.5.9",
+    "@storybook/addon-interactions": "^6.5.9",
+    "@storybook/addon-links": "^6.5.9",
+    "@storybook/builder-webpack5": "^6.5.9",
+    "@storybook/manager-webpack5": "^6.5.9",
+    "@storybook/node-logger": "^6.5.9",
+    "@storybook/preset-create-react-app": "^4.1.2",
+    "@storybook/react": "^6.5.9",
+    "@storybook/testing-library": "^0.0.13",
+    "babel-plugin-named-exports-order": "^0.0.2",
     "microbundle": "^0.15.0",
-    "react-app-rewired": "^2.2.1"
+    "prop-types": "^15.8.1",
+    "react-app-rewired": "^2.2.1",
+    "webpack": "^5.73.0"
   },
   "files": [
     "LICENSE",

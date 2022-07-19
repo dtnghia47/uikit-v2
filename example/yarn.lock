@@ -1169,10 +1169,10 @@
   resolved "https://registry.yarnpkg.com/@csstools/selector-specificity/-/selector-specificity-2.0.2.tgz#1bfafe4b7ed0f3e4105837e056e0a89b108ebe36"
   integrity sha512-IkpVW/ehM1hWKln4fCA3NzJU8KwD+kIOvPZA4cqxoJHtE21CCzjyp+Kxbu0i5I4tBNOlXPL9mjwnWlL0VEG4Fg==
 
-"@dtnghia47/uikit-v2@^0.1.6":
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/@dtnghia47/uikit-v2/-/uikit-v2-0.1.6.tgz#276a52aef81904a712b912a9fba0caa28df2ae36"
-  integrity sha512-UfjKBjKgi0zypz2fTEnZJzH7dszDhhhWFhcEaLI25hAlFcuaMNFksfquDJ3CbCURDRdkauWn4vm56zA8aED3qA==
+"@dtnghia47/uikit-v2@^0.1.8":
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/@dtnghia47/uikit-v2/-/uikit-v2-0.1.8.tgz#4ed8280d612cfe9666b53d293a6ea496479e08d6"
+  integrity sha512-+ChDFDepiqHUAadJZOmVJbfgaHv3P1JCCdMIbgNE6JbilyB5mKuK7nxQBoZ3IERbmoJw2WelP05H4LxATvxUkw==
   dependencies:
     "@types/node" "^16.7.13"
     "@types/react" "^18.0.0"
