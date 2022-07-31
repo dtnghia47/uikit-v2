@@ -16,10 +16,17 @@ in Repo A
 in repo B
 => `npm unlink` -->
 
-## Upgrade package version
+<!-- ## Storybook
+```
+  yarn storybook
+```
 
+## Deploy
+```
+  yarn build
+  yarn publish
+```
+## Upgrade package version
 ```
   yarn upgrade @dtnghia47/uikit-v2 --latest
-```
-
-## I will make a website with this uikit
+``` -->

@@ -1,32 +1,13 @@
-<!-- Repo A import Repo B
+## Quick Start
 
-## Link
-
-=> `npm run build` in repo B
-=> npm link
-
-in repo A
-run `npm link B`
-=> `npm link uikit-v2`
-
-## How to unlink
-in Repo A
-=> `npm unlink --no-save B`
-
-in repo B
-=> `npm unlink` -->
-
-## Storybook
 ```
-  yarn storybook
+  yarn add @dtnghia47/uikit-v2
 ```
 
-## Deploy
+## How to use
+
 ```
-  yarn build
-  yarn publish
-```
-## Upgrade package version
-```
-  yarn upgrade @dtnghia47/uikit-v2 --latest
+  import { Button } from "@dtnghia47/uikit-v2";
+
+  <Button label="check 1" />
 ```

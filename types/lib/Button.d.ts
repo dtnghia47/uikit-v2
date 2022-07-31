@@ -1,28 +1,14 @@
-
-import * as React from 'react';
-// import { CSSModule } from './utils';
+import * as React from "react";
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  /**
-   * Is this the principal call to action on the page?
-   */
   primary?: boolean;
-  /**
-    * What background color to use
-    */
+  className?: string;
+  type?: "button" | "submit" | "reset" | undefined;
   backgroundColor?: string;
-  /**
-    * How large should the button be?
-    */
-  size?: 'small' | 'medium' | 'large';
-  /**
-    * Button contents
-    */
+  size?: "small" | "medium" | "large";
   label: string;
-  /**
-    * Optional click handler
-    */
+  isOutline?: boolean;
   onClick?: () => void;
 }
 

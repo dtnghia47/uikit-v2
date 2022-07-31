@@ -1,26 +1,36 @@
-import React from 'react';
-import './button.css';
+import React from "react";
+import classnames from "classnames";
+
 import { ButtonProps } from "../../../types/lib/Button";
+import styles from "./styles.module.css";
+
 /**
  * Primary UI component for user interaction
  */
 
 const Button = ({
   primary = false,
-  size = 'medium',
+  size = "medium",
   backgroundColor,
   label,
+  type = "button",
+  className = "",
+  isOutline = false,
+  children,
   ...props
 }: ButtonProps) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
   return (
     <button
-      type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
+      type={type}
+      className={classnames(className, styles.button, styles[`size--${size}`], {
+        [styles.buttonPrimary]: primary,
+        [styles.buttonSecondary]: !primary,
+        [styles.buttonOutline]: isOutline,
+      })}
       style={{ backgroundColor }}
       {...props}
     >
-      {label}
+      {children}
     </button>
   );
 };
